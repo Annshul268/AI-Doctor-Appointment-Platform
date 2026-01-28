@@ -1,0 +1,125 @@
+{
+  "name": "AI HealthCare - Smart Medical Assistant",
+  "short_name": "AI HealthCare",
+  "description": "AI-powered healthcare platform with offline symptom checking, emergency mode, and smart doctor matching",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f9ff",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "categories": ["health", "medical", "ai", "productivity"],
+  "screenshots": [
+    {
+      "src": "/screenshots/homepage-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshots/dashboard-desktop.png", 
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96", 
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Emergency Mode",
+      "short_name": "Emergency",
+      "description": "Activate emergency mode for immediate medical help",
+      "url": "/emergency",
+      "icons": [{ "src": "/icons/emergency-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "AI Symptom Checker",
+      "short_name": "Symptoms",
+      "description": "Check symptoms with AI assistance",
+      "url": "/symptom-checker",
+      "icons": [{ "src": "/icons/ai-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Find Doctor",
+      "short_name": "Doctors",
+      "description": "Find and book appointments with doctors",
+      "url": "/find-doctor",
+      "icons": [{ "src": "/icons/doctor-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Health Dashboard",
+      "short_name": "Dashboard",
+      "description": "View your health metrics and goals",
+      "url": "/dashboard",
+      "icons": [{ "src": "/icons/dashboard-96x96.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.aihealthcare.app",
+      "id": "com.aihealthcare.app"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/ai-healthcare/id123456789"
+    }
+  ],
+  "prefer_related_applications": false,
+  "features": [
+    "offline-ai-symptom-checking",
+    "emergency-location-sharing", 
+    "voice-recognition",
+    "image-analysis",
+    "multi-language-support",
+    "wearable-integration"
+  ]
+}

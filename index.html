@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI HealthCare - Smart Medical Assistant</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="AI-powered healthcare platform with offline symptom checking, emergency mode, and smart doctor matching">
+    <meta name="keywords" content="AI, healthcare, doctor, appointment, symptom checker, emergency, medical, health">
+    <meta name="author" content="AI HealthCare">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- iOS PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="AI HealthCare">
+    <link rel="apple-touch-icon" href="/placeholder.svg">
+
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="msapplication-navbutton-color" content="#0ea5e9">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI HealthCare - Smart Medical Assistant">
+    <meta property="og:description" content="Revolutionary AI-powered healthcare platform with voice recognition, image analysis, and emergency features">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/client/App.tsx"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('🤖 AI HealthCare SW registered:', registration);
+            })
+            .catch((error) => {
+              console.log('SW registration failed:', error);
+            });
+        });
+
+        // Offline/Online indicators
+        window.addEventListener('online', () => {
+          console.log('🌐 Back online - Full AI features restored');
+        });
+
+        window.addEventListener('offline', () => {
+          console.log('📱 Offline mode - Basic AI features available');
+        });
+      }
+    </script>
+  </body>
+</html>
